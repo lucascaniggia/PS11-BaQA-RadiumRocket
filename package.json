@@ -1,0 +1,27 @@
+{
+  "name": "semana-11",
+  "version": "0.0.1",
+  "description": "'Problemática semanal 11 - BaQA - RR'",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascaniggia/PS11-BaQA-RadiumRocket.git"
+  },
+  "author": "'Lucas Caniggia'",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucascaniggia/PS11-BaQA-RadiumRocket/issues"
+  },
+  "homepage": "https://github.com/lucascaniggia/PS11-BaQA-RadiumRocket#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
