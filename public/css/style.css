@@ -1,0 +1,212 @@
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	max-width: 90%;
+	margin: auto;
+}
+
+.form-box {
+	margin-top: 3%;
+	margin: 5% auto 0 auto;
+	padding: 30px;
+	border: 1px solid rgba(65, 0, 0, 0.856);
+	box-shadow: 2px 2px 2px 1px rgba(65, 0, 0, 0.856);
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgb(227, 233, 235);
+}
+
+h1 {
+	margin-bottom: 20px;
+	color: rgba(1, 10, 65, 0.856);
+	font-weight: 800;
+	font-size: x-large;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+	margin-bottom: 10px;
+	color: rgba(1, 10, 65, 0.856);
+	font-weight: 600;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reg-form {
+	margin-bottom: 3%;
+	padding-bottom: 20px;
+	border-top: 2px solid rgba(65, 0, 0, 0.856);
+	border-bottom: 2px solid rgba(65, 0, 0, 0.856);
+}
+
+.form-item {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: rgba(1, 10, 65, 0.856);
+	padding-top: 20px;
+	padding-bottom: 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.center{
+	color: #cfc;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#mailLab, #passLab, #nameLab {
+	padding-top: 0px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.inputForms {
+	width: 300px;
+}
+
+.inputForms:focus {
+	border: 1px solid #0075ff;
+	outline: none;
+	size: auto;
+	box-shadow: 1px 0 30px rgba(163, 163, 163, 0.4);
+}
+
+.validationContent, .myList {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+p.href-red, a {
+	color: rgba(1, 10, 65, 0.856);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgba(1, 10, 65, 0.856);
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgba(1, 10, 65, 0.856);
+}
+
+input{
+	margin: 0px 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.errorMssg {
+	display: none;
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-weight: bold;
+    color: rgb(136, 52, 52);
+    text-shadow: rgba(223, 227, 250, 0.4) 1px 1px;
+}
+
+.errorMssg-active {
+	padding: 5px 0px 0px 20px;
+	display: block;
+}
+
+button{
+	color: rgba(1, 10, 65, 0.856);
+	margin: 20px 20px;
+	padding: 10px 30px;
+	font-weight: 700;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button:hover {
+	box-shadow: 1px 0px 30px rgba(223, 227, 250, 0.4);
+	background-color: #aaa;
+	color: #555;
+}
+
+#form-result{
+	font-family: 'Courier New', Courier, monospace;
+	margin-top: 20px;
+	padding: 10px 20px;
+	border: 2px solid #555;
+}
+.alert-hidden{
+	display: none;
+}
+.alert-block{
+	display: block;
+}
+.alert-valid{
+	background-color: #cfc;
+}
+.alert-invalid{
+	background-color: #fcc;
+}
+
+.validationContent {
+	display: list-item;
+}
+
+.myList {
+    list-style-type: none;
+}
+
+/* Validation's style */
+
+.form-item-valid {
+	color: rgb(12, 99, 0);
+	opacity: 1;
+}
+
+.form-item-valid .inputForms {
+	border: 2px solid rgb(12, 99, 0);
+}
+
+.form-item-invalid {
+	color: rgb(199, 0, 0);
+	opacity: 1;
+}
+
+.form-item-invalid .inputForms {
+	border: 2px solid rgb(199, 0, 0);
+}
+
+.form-mssg {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+	font-weight: 600;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mssgErrForm-active p{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(199, 0, 0);
+}
+
+.mssgOkForm-active p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(12, 99, 0);
+}
+
+.form-mssg li {
+	padding: 5px;
+	color: rgba(1, 10, 65, 0.856)
+}

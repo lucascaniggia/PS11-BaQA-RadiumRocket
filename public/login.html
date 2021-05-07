@@ -1,0 +1,56 @@
+<!-- PROBLEMATICA SEMANAL 10 -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="form-box">
+				<h1>Login</h1>
+				<form id="loginForm">
+					<div class="reg-form">
+						<div class="form-item" id="log-mail">
+							<label id="mailLab" class="form-item" for="emailInput">Email</label>
+							<div class="inputDiv">
+								<input id="emailInput" class="inputForms" type="email" placeholder="example123@example.com" name="email" required>
+								<p id="invalidMail" class="errorMssg">The email address is invalid</p>
+							</div>
+						</div>
+						<div class="form-item" id="log-pass">
+							<label id="passLab" class="form-item" for="passInput">Password</label>
+							<div class="inputDiv">
+								<input id="passInput" class="inputForms" type="password" placeholder="Enter your password" name="pass" required>
+								<p id="invalidPass" class="errorMssg">Your password can only contain letters (a-z, A-Z) <br>and numbers (0-9), and must have at least 8 characters</p>
+							</div>
+						</div>
+					</div>
+					<div class="center">
+						<button type="submit" class="submitBtn">Login</button>
+					</div>
+				</form>
+				<p class="href-red">Don't have an account? <a href="./register.html" id="link">Register now!</a></p>
+			</div>
+		</div>
+		<div class="form-mssg" id="mssgErrForm">
+			<p><b>Error:</b> Please, fill out all fields</p>
+		</div>
+		<div class="form-mssg" id="mssgOkForm">
+			<p id="successMssg"><b>Your form has been submitted succesfully!</b></p>
+			<ul>
+				<li>Email: <span id="result1"></span></li>
+			</ul>
+		</div>
+		<div class="validationContent">
+			<ul class="myList"></ul>
+		</div>
+		<!-- <script src="./js/login.js"></script> -->
+		<script src="js-PS.10/valid_login.js"></script>
+	</body>
+</html>
