@@ -6,7 +6,7 @@ const Page = require('./page');
 class LoginPage extends Page {
 
     // Login's input and button selectors
-    get username() { return $('#emailInput') }
+    get usermail() { return $('#emailInput') }
     get password() { return $('#passInput') }
     get submitBtn() { return $('button[type="submit"]') }
 
@@ -15,12 +15,17 @@ class LoginPage extends Page {
     get passAlert() { return $('#invalidPass') }
     get succesAlert() { return $('#successMssg') }
 
+    // Redirection to 'login page' button
+    get redirectLink() { return $('a') }
 
     open() {
         return super.open('login');
     }
     submit() {
         this.submitBtn.click()
+    }
+    redirect() {
+        this.redirectLink.click()
     }
 }
 
